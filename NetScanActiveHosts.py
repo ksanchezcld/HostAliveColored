@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import os
-import sys
 import time
 from subprocess import Popen, PIPE
 
@@ -11,11 +10,12 @@ class color:
 	RED = '\033[91m'
 	ENDC = '\033[0m'
 	
-print color.BLUE + "\t\t********************************" + color.ENDC
-print color.BLUE + "\t\t**                            **" + color.ENDC
-print color.BLUE + "\t\t**Developed By: @ksanchez_cld **" + color.ENDC
-print color.BLUE + "\t\t**                            **" + color.ENDC
-print color.BLUE + "\t\t********************************" + color.ENDC
+print color.BLUE + "\t\t*********************************" + color.ENDC
+print color.BLUE + "\t\t***Developed By: @ksanchez_cld***" + color.ENDC
+print color.BLUE + "\t\t*(Security + MGP + PS. Auditor)*" + color.ENDC
+print color.BLUE + "\t\t**Verificar Host Online/Offline**" + color.ENDC
+print color.BLUE + "\t\t*********************************" + color.ENDC
+
 NET = '10.0.0.'
 
 def netscan():
