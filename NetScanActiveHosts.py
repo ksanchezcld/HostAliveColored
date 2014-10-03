@@ -16,7 +16,7 @@ print color.BLUE + "\t\t**                            **" + color.ENDC
 print color.BLUE + "\t\t**Developed By: @ksanchez_cld **" + color.ENDC
 print color.BLUE + "\t\t**                            **" + color.ENDC
 print color.BLUE + "\t\t********************************" + color.ENDC
-NET = '192.188.173.'
+NET = '10.0.0.'
 
 def netscan():
 	for x in range(1,255):
@@ -27,8 +27,6 @@ def netscan():
 		stdout, stderr = subprocess.communicate(input=None)
 		if "bytes from" in stdout:
 			print color.GREEN + "La direccion %s esta respondiendo..."% ipadd + color.ENDC
-			#(stdout.split())
 		else:
 			print color.RED + "No esta respondiento " + ipadd + color.ENDC
-
 netscan()
